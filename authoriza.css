@@ -1,0 +1,54 @@
+.autoriza {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.login-container {
+background-color:#fff;
+padding: 2em;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+width: 300px;
+text-align: center;
+}
+
+ .login-container h2 {
+  margin-bottom: 1em;
+ }
+
+ .login-container input[type="text"] {
+width: 100%;
+padding: 0.5em;
+margin-bottom: 1em;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+ }
+ .login-container input[type="password"] {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+   }
+  
+
+ .login-container input[type="submit"] {
+width: 100%;
+padding: 0.5em;
+background-color: #804030;
+color: #fff;
+border: none; 
+border-radius: 4px; 
+cursor: pointer; 
+box-sizing: border-box;
+ }
+ .login-container input[type="submit"]:hover {
+  background-color: #555;  
+  box-sizing: border-box;
+}
