@@ -1,0 +1,25 @@
+main {
+  padding: 30vh 0 0;
+  text-align: center;
+
+  h2 {
+    font-size: 18px;
+    color: #804030;
+  }
+
+  button {
+    padding: 20px 90px;
+    font-size: 18px;
+    font-weight: 600;
+    background: none;
+    border: 1px solid #804030;
+    color: #804030;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    background: #804030;
+    color: #fff;
+    cursor: pointer;
+  }
+}

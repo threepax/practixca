@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница повара - Ресторан «Tortororo»</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/nick-kir/caledzh/KotAndCipa/styles/coocker.css">
+</head>
+<body>
+    <header>Информационная система<br />ресторана Tortotoro
+        <span></span></header>
+
+    <div class="content">
+        <div class="orders-container">
+            <h2>Заказы</h2>
+            <div class="order" id="order-1">
+                <p><strong>Заказ #1:</strong> Суши сет «Токио»</p>
+                <button onclick="startCooking('order-1')">Готовится</button>
+            </div>
+            <div class="order" id="order-2">
+                <p><strong>Заказ #2:</strong> Ролл «Калифорния»</p>
+                <button onclick="startCooking('order-2')">Готовится</button>
+            </div>
+            <!-- Добавьте больше заказов по мере необходимости -->
+        </div>
+    </div>
+
+    <script>
+        function startCooking(orderId) {
+            const orderElement = document.getElementById(orderId);
+            const button = orderElement.querySelector('button');
+            button.innerText = 'Готово';
+            button.setAttribute('onclick', `completeOrder('${orderId}')`);
+        }
+
+        function completeOrder(orderId) {
+            const orderElement = document.getElementById(orderId);
+            orderElement.remove();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+.admin {
+  padding: 50px;
+  margin: 0 auto;
+
+  h2 {
+    color: #804030;
+  }
+
+  button {
+    padding: 5px 15px;
+    background: none;
+    border: 1px solid #804030;
+    transition: 0.15s;
+    font-size: 16px;
+    font-weight: 500;
+    color: #804030;
+  }
+
+  button:hover {
+    background: #804030;
+    cursor: pointer;
+    color: #fff;
+  }
+}
+
+.categoryList {
+  margin-bottom: 10px;
+}
+
+.button-active {
+  background: #804030 !important;
+  cursor: default !important;
+  color: #fff !important;
+}
+
+.doingBlock {
+  display: none;
+}
+
+.layoff {
+  margin: 0 auto;
+  max-width: 540px;
+
+  h2 {
+    text-align: center;
+  }
+
+  ul {
+    padding-left: 0;
+    list-style: none;
+    overflow-y: auto;
+    max-height: 200px;
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted #804030;
+    margin: 15px 0;
+  }
+
+  .layoff-button {
+    cursor: pointer;
+    padding-bottom: 10px;
+  }
+}

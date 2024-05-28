@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/admin.css" />
+    <title>Tortotoro</title>
+  </head>
+  <body>
+    <header>
+      <h1>Информационная система<br />ресторана Tortotoro</h1>
+      <span></span>
+    </header>
+    <section class="admin">
+      <h2>Выберите категорию</h2>
+      <div class="categoryList list-main">
+        <button id="staff">Сотрудники</button>
+        <button id-="shift">Смены</button>
+      </div>
+      <div class="categoryList list-staff">
+        <button id="reg">Регистрация</button>
+        <button id="layoff">Увольнение</button>
+      </div>
+      <div class="categoryList list-shift">
+        <button id="orders">Заказы</button>
+        <button id="peeking">Назначение сотрудников</button>
+        <button id="manage">Управление сменами</button>
+      </div>
+    </section>
+
+    <section class="doingBlock layoff">
+      <h2>Увольнение сотрудников</h2>
+      <ul>
+        <li>
+          <span>Никита Рудометов</span> <span class="layoff-button">x</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="doingBlock register">
+      <h2>Регистрация нового пользователя</h2>
+      <!-- todo: добавить логин от кирилла -->
+    </section>
+
+    <script src="../scripts/admin.js"></script>
+  </body>
+</html>
